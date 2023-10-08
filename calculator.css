@@ -1,0 +1,131 @@
+/* Generelle definitioner */
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Calibri, Arial, sans-serif, Helvetica;
+}
+
+/* The grid container */
+.grid-container {
+    display: grid;
+    grid-template-areas:
+                'headerGrid headerGrid headerGrid headerGrid'
+                'historyGrid historyGrid historyGrid historyGrid'
+                'resultGrid resultGrid resultGrid resultGrid'
+                'operatorTopGrid operatorTopGrid operatorTopGrid operatorTopGrid'
+                'numTopGrid numTopGrid numTopGrid numTopGrid'
+                'numMiddle1Grid numMiddle1Grid numMiddle1Grid numMiddle1Grid'
+                'numMiddle2Grid numMiddle2Grid numMiddle2Grid numMiddle2Grid'
+                'numBottomGrid numBottomGrid numBottomGrid numBottomGrid'
+}
+
+.headerGrid {
+    grid-area: headerGrid;
+}
+
+.historyGrid {
+    grid-area: historyGrid;
+}
+
+.resultGrid {
+    grid-area: resultGrid;
+}
+
+.operatorTopGrid {
+    grid-area: operatorTopGrid;
+}
+
+.numTopGrid {
+    grid-area: numTopGrid;
+}
+
+.numMiddle1Grid {
+    grid-area: numMiddle1Grid;
+}
+
+.numMiddle2Grid {
+    grid-area: numMiddle2Grid;
+}
+
+.numBottomGrid {
+    grid-area: numBottomGrid;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .grid-container  {
+        grid-template-areas:
+                'headerGrid headerGrid headerGrid headerGrid'
+                'historyGrid historyGrid historyGrid historyGrid'
+                'resultGrid resultGrid resultGrid resultGrid'
+                'operatorTopGrid operatorTopGrid operatorTopGrid operatorTopGrid'
+                'numTopGrid numTopGrid numTopGrid numTopGrid'
+                'numMiddle1Grid numMiddle1Grid numMiddle1Grid numMiddle1Grid'
+                'numMiddle2Grid numMiddle2Grid numMiddle2Grid numMiddle2Grid'
+                'numBottomGrid numBottomGrid numBottomGrid numBottomGrid'
+    }
+}
+
+
+header {
+    text-align: center;
+}
+
+.history {
+  text-align: right;
+  width: 310px;
+  height: 30px;
+
+  font-size: 24px;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+  margin-bottom: 3px
+}
+
+.result {
+  text-align: right;
+  width: 310px;
+  height: 40px;
+
+  font-size: 32px;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+  margin-bottom: 3px
+}
+
+.button {
+  background-color: #4CAF50;
+  color: white;
+  
+  text-align: center;
+  width: 75px;
+  height: 75px;
+
+  font-size: 32px;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+  margin-bottom: 3px
+}
+
+.button:hover {
+  background-color: #009900;
+  color: white;
+}
+
+.button:active{
+  background-color: #006600;
+
+}
+
+.button.operator:focus {
+  background-color: #006600;
+}
+
+body {
+  font-family: system-ui;
+  background: #f06d06;
+  color: white;
+  text-align: center;
+}

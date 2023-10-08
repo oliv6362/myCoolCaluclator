@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cool calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+  
+    <div class="grid-container">
+        
+    <header class="headerGrid"><h1>👋 My Cool calculator👋</h1></header>
+        
+          <div class="historyGrid">
+            <input type="text" class="history" id="history" DISABLED> 
+          </div>
+        
+          <div class="resultGrid">
+            <input type="text" class="result" id="result"> 
+          </div>
+          
+          <div class="operatorTopGrid">
+            <button type="button" onclick="operatorType('±')" class="button operator">+/-</button>
+            <button type="button" onclick="operatorType('%')" class="button operator">%</button>
+            <button type="button" onclick="operatorType('÷')" class="button operator">÷</button>
+            <button type="button" onclick="clearLast()" class="button">⌫</button>
+          </div>
+        
+          <div class="numTopGrid">
+            <button type="button" value="1" onclick="include(1)" class="button">1</button>
+            <button type="button" value="2" onclick="include(2)" class="button">2</button>
+            <button type="button" value="3" onclick="include(3)" class="button">3</button>
+            <button type="button" onclick="operatorType('*')" class="button operator">x</button>
+          </div>
+        
+          <div class="numMiddle1Grid">
+            <button type="button" value="4" onclick="include(4)" class="button">4</button>
+            <button type="button" value="5" onclick="include(5)" class="button">5</button>
+            <button type="button" value="6" onclick="include(6)" class="button">6</button>
+            <button type="button" onclick="operatorType('-')" class="button operator">-</button>
+          </div>
+        
+          <div class="numMiddle2Grid">
+            <button type="button" value="7" onclick="include(7)" class="button">7</button>
+            <button type="button" value="8" onclick="include(8)" class="button">8</button>
+            <button type="button" value="9" onclick="include(9)" class="button">9</button>
+            <button type="button" onclick="operatorType('+')" class="button operator">+</button>
+          </div>
+        
+          <div class="numBottomGrid">
+            <button type="button" onclick="clearAll()" class="button">AC</button>
+            <button type="button" value="0" onclick="include(0)" class="button">0</button>
+            <button type="button" onclick="comma()" class="button">,</button>
+            <button type="button" onclick="equals()" class="button">=</button>
+          </div>
+      
+      </div>
+
+      <script src="calculator.js"></script>
+    </body>
+    </html>
