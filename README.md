@@ -6,3 +6,5 @@ Blev ikke helt færdig med lommeregneren, så de ØVERSTE 3 knapper virker ikke 
 Udover det, så burde den virke ligesom windows lommeregneren og uden bugs.
 
 Glemte at skrive dokumentation til selve koden, så i næste version bliver de 3 knapper fikset og dokumentation bliver tilføjet.
+
+IMPORTANT: Hvis du har node og npm installeret, så kan du kører min calculator ved brug af "npx serve" i visual code terminal
