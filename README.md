@@ -1,7 +1,7 @@
 # myCoolCaluclator
 Denne lommeregner er udviket med html, css og javascript. Den er inspireret af windows versionen.
 
-Blev ikke helt færdig med lommeregneren, så de ØVERSTE 3 knapper virker ikke rigtigt, men dividere gør.
+Blev ikke helt færdig med lommeregneren, så de ØVERSTE 3 knapper virker ikke rigtigt, men dividere gør. Derudover, så kan man ikke bruge tasteturet til at skrive med.
 
 Udover det, så burde den virke ligesom windows lommeregneren og uden bugs.
 
